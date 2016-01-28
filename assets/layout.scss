@@ -1,0 +1,171 @@
+
+
+#clothesWrapper {
+	position: relative;
+	width: 100%;
+	min-height: 740px;
+	transition: background-position 0.8s;
+	z-index: 2;
+	overflow: hidden;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	}
+
+#clothesCarousel {
+	width: 1480px;
+	height: 560px;
+	list-style: none;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin: 0 0 0 -737px;
+	overflow: hidden;
+	}
+
+#clothesCarousel li {
+	display: block;
+	width: 280px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	transition: margin-left 0.4s, left 0.8s, opacity 0.8s;
+	padding: 0 0 10px;
+	}
+
+#clothesCarousel li:nth-of-type(n+5),
+#clothesCarousel li:nth-of-type(1) {
+	opacity: 0;
+	}
+
+#clothesCarousel li:nth-of-type(1) {
+	left: 0px;
+	}
+
+#clothesCarousel li:nth-of-type(2) {
+	left: 300px;
+	}
+
+#clothesCarousel li:nth-of-type(3) {
+	left: 600px;
+	}
+
+#clothesCarousel li:nth-of-type(4) {
+	left: 900px;
+	}
+
+#clothesCarousel li:nth-of-type(n+5) {
+	left: 1200px;
+	}
+
+#clothesCarousel li:nth-of-type(n+6) {
+	display: none;
+	}
+
+#clothesCarousel a.clothWrap:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -5px;
+	left: 50px;
+	width: 180px;
+	height: 20px;
+	border-radius: 100%;
+	background: rgba(0,0,0,0.07);
+	-webkit-filter: blur(3px);
+	   -moz-filter: blur(3px);
+	        filter: blur(3px);
+	}
+
+#clothesCarousel img.clothes {
+	padding: 0 0 30px;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+	cursor: ew-resize;
+	cursor: grab;
+	}
+
+#clothesCarousel:focus img.clothes,
+#clothesCarousel:active img.clothes {
+	cursor: ew-resize;
+	cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+	}
+
+#clothesCarousel.prev img.clothes {
+	-webkit-animation: swingback 1s linear;
+	        animation: swingback 1s linear;
+	-webkit-transform-origin: 50% 5px;
+			transform-origin: 50% 5px;
+	}
+
+#clothesCarousel.next img.clothes {
+	-webkit-animation: swingnext 1s linear;
+	        animation: swingnext 1s linear;
+	-webkit-transform-origin: 50% 5px;
+	        transform-origin: 50% 5px;
+	}
+
+#clothesCarousel.prev a.clothWrap:after {
+	-webkit-animation: shadowback 1s linear;
+	        animation: shadowback 1s linear;
+	}
+
+#clothesCarousel.next a.clothWrap:after {
+	-webkit-animation: shadownext 1s linear;
+	        animation: shadownext 1s linear;
+	}
+	
+#clothesCarousel a.clothWrap {
+	display: block;
+	width: 200px;
+	padding: 30px 40px;
+	color: #111;
+	position: relative;
+	text-decoration: none;
+	}
+
+#clothesCarousel li img.clothes {
+	width: 200px;
+	}
+
+#prevClothes,
+#nextClothes {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	top: 5%;
+	opacity: 0.3;
+	transition: opacity 0.2s;
+	}
+
+#prevClothes img,
+#nextClothes img {
+	width: 40px;
+	height: 280px;
+	}
+
+#prevClothes {
+	left: 0;
+	}
+
+#nextClothes {
+	right: 0;
+	}
+
+#prevClothes:hover,
+#nextClothes:hover {
+	opacity: 1;
+	}
+
+#clothesWrapper img.arrows {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	width: 76px;
+	height: 53px;
+	margin: 0 0 0 -38px;
+	}
