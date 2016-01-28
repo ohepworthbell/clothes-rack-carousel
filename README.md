@@ -1,5 +1,5 @@
-# clothes-rack-carousel
-A simple carousel with a clothes' rack style of movement. Animations are done using CSS3.
+# Clothes Rack Carousel
+A simple carousel with a clothes' rack style of movement with very basic responsiveness. Animations are done using CSS3, switching is done in JavaScript (jQuery depenency, working on vanilla version).
 
 ### Demo
 Coming soon...
