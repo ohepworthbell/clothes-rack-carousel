@@ -3,6 +3,7 @@ A simple carousel with a clothes' rack style of movement with very basic respons
 
 ### Demo
 ![Animated gif demo of carousel](http://ohepworthbell.github.io/clothes-rack-carousel/img/demo.gif)
+
 [ Click here for a demo ](http://ohepworthbell.github.io/clothes-rack-carousel/)
 
 ### To do
