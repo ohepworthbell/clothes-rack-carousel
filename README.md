@@ -1,5 +1,5 @@
 # Clothes Rack Carousel
-A simple carousel with a clothes' rack style of movement with very basic responsiveness. Animations are done using CSS3, switching is done in JavaScript (jQuery depenency, working on vanilla version).
+A simple carousel with a clothes' rack style of movement with very basic responsiveness. Animations are done using CSS3, switching is done in JavaScript (jQuery depenency, working on vanilla version). [ view demo ](http://ohepworthbell.github.io/clothes-rack-carousel/)
 
 ### Demo
 ![Animated gif demo of carousel](http://ohepworthbell.github.io/clothes-rack-carousel/img/demo.gif)
@@ -11,3 +11,4 @@ A simple carousel with a clothes' rack style of movement with very basic respons
 * Improve multiple swipe bug - when quickly swiping, carousel glitches and repidly resets animations
 * Improve responsive nature - allow custom numbers of t-shirt items and percent widths of clothes on hanger
 * Wrap responsive features, navigation, etc. in function for easier implementation
+* Any other suggestions welcome :)
